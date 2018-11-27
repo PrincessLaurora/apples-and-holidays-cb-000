@@ -21,6 +21,8 @@ if season  == :winter && :spring & :summer & :fall
 holiday_supplies[season] = {:holiday_name => supply_array}
 return holiday_hash
 end
+end
+end
 
 def all_winter_holiday_supplies(holiday_hash)
   # return an array of all of the supplies that are used in the winter season
