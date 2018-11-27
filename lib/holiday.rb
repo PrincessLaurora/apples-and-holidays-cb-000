@@ -26,13 +26,12 @@ holiday_hash[:winter].values.flatten # return an array of all of the supplies th
 end
 
 def all_supplies_in_holidays(holiday_hash)
-  holiday_hash.each do |season, holiday, supply|
-    season.to_s.capitalize!
-    holiday.split each do |day|
-      day.capitalize!.join
-    supply.join
-puts "#{season}: #{holiday}: #{supply}"
+  holiday_hash.each do |season, holidays|
+    puts "#{season.to_s.capitalize!}:"
+    holidays.split each do |holiday, supplies|
+      puts "#{holiday.to_s.split('_').collect {|word|.capitalize!}.join(" ")}: #{supplies.join(", ")}"
   end
+end
 end
 
     # iterate through holiday_hash and print items such that your readout resembles:
