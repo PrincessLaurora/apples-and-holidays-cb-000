@@ -50,4 +50,3 @@ holidays.collect do |holiday, supplies|
 end
 end.flatten.compact
 end
-
