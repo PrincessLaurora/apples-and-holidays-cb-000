@@ -17,8 +17,8 @@ end
 
 def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
 holiday_supplies.each do |season|
-if season  == :winter && :spring & :summer & :fall
-season[holiday_name]  = supply_array
+if season  == :winter && :spring && :summer && :fall
+season[holiday_name] = supply_array
 return holiday_supplies
 end
 end
